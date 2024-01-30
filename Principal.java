@@ -1,16 +1,11 @@
-import java.util.LocalDate;
-
 public class Principal {
-    public void main (String[] args){
+    public static void main (String[] args){
         System.out.println("Hola mundo");
         horaActual();
-    }
+    }   
 
-    public void horaActual(){
-        LocalDateTime locaDate = LocalDateTime.now();
-        int hours  = locaDate.getHour();
-        int minutes = locaDate.getMinute();
-        int seconds = locaDate.getSecond();
-        System.out.println("Hora actual : " + hours  + ":"+ minutes +":"+seconds);     
+    static void horaActual(){
+        java.util.Date date = new java.util.Date();    
+        System.out.println(date);   
     }
 }
